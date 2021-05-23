@@ -11,7 +11,7 @@ def main(argv):
         ans_cur = cur_rate.currency_rates(str(argv[1]))
         cur = argv[1].upper()
         if ans_cur.get(cur):
-            print(f'{cur}/RUB = {ans_cur[cur][1]} за {ans_cur[cur][0]} рубль(-ей) на {ans_cur[cur][2]}')
+            print(f'RUB/{cur} = {ans_cur[cur][1]} за {ans_cur[cur][0]} рубль(-ей) на {ans_cur[cur][2]}')
         else:
             print('Такой валюты не существует')
 
