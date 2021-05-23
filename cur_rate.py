@@ -44,3 +44,6 @@ def currency_rates(get_cur):
             currency_list[_currency].append(float(xml_list[i+1].replace(',', '.')))
             currency_list[_currency].append(date_rate.date())
     return currency_list
+
+if __name__ == '__main__':
+    print(currency_rates(input('Введите банковское наименование валюты ')))
