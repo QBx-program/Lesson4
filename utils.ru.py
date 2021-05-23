@@ -8,7 +8,6 @@ def file_run():
 def main(argv):
     import cur_rate
     if len(argv) > 0:
-        print('Ответ из консоли:')
         ans_cur = cur_rate.currency_rates(str(argv[1]))
         cur = argv[1].upper()
         if ans_cur.get(cur):
