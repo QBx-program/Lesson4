@@ -3,7 +3,7 @@ import re
 from datetime import datetime
 
 
-def currency_rates(get_cur):
+def currency_rates():
     response = requests.get('http://www.cbr.ru/scripts/XML_daily.asp')
     if response.status_code == 200:
         print('Соединение установлено с http://www.cbr.ru/scripts/XML_daily.asp')
