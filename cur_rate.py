@@ -10,7 +10,7 @@ def currency_rates():
     else:
         print(f'Ошибка соединения: {response.status_code}')
     date_server = datetime.strptime(response.headers['Date'], '%a, %d %B %Y %H:%M:%S %Z')
-    print(f'Дата в ответе сервера: {date_server.date()}')
+    print(f'Дата в ответе сервера: {date_server.day:02d}.{date_server.month:02d}.{date_server.year}')
     text = response.text
     xml_list = []
     currency_list = {}
